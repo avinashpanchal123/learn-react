@@ -4,14 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ColourPicker from './ColourPicker'
 import PasswordGenerator from './PasswordGenerator'
+import Message from './Message'
 
 function App() {
 
 
   return (
     <>
-      
-     <PasswordGenerator/>
+      <Message/>
+     {/* <PasswordGenerator/> */}
     </>
   )
 }
