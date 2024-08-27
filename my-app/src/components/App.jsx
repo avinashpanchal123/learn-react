@@ -1,20 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ColourPicker from './ColourPicker'
-import PasswordGenerator from './PasswordGenerator'
-import Message from './Message'
+import { useState } from "react";
+import "./../App.css";
+import ColourPicker from "./ColourPicker";
+import PasswordGenerator from "./PasswordGenerator";
+import Message from "./Message";
+import { Outlet } from "react-router-dom";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 
 function App() {
-
-
   return (
     <>
-      <Message/>
-     {/* <PasswordGenerator/> */}
+      <Header />
+      <Outlet />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
