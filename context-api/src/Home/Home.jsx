@@ -1,11 +1,12 @@
-import { useState } from "react";
-import UserContext from "./../UserContext/UserContext";
+import { useContext } from "react";
+import UserContext from "../UserContext/UserContext";
 
-function Home() {
-  return;
-  <>
-    <h1>Hello World</h1>
-  </>;
+function Home(){
+    const {user} = useContext(UserContext);
+    console.log(user)
+    return <>
+    <h1>{!!user ? "Hii, "+ user.userName : ''} </h1>
+    </>
 }
 
 export default Home;

@@ -3,11 +3,11 @@ import App from "../App";
 import UserContext from "./UserContext";
 
 function UserContextProvider({ children }) {
-  const [theme, setTheme] = useState("light");
+  const [user, setUser] = useState(null);
 
   return (
     <>
-      <UserContext.Provider value={{ theme, setTheme }}>
+      <UserContext.Provider value={{ user, setUser }}>
         {children}
       </UserContext.Provider>
     </>
